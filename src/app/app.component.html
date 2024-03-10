@@ -1,0 +1,30 @@
+<div id="container" >
+  <button (click)="showData = true">SHOW WHETHER</button>
+ 
+  
+  @if( showData ){
+    <div> <span id="span1"> Ciudad:</span><span id="span2">{{clima.name}}</span></div>
+    <div><span id="span1">Temperatura:</span><span id="span2">{{clima.main.temp}}</span></div>
+    <div><span id="span1">Sensación:</span><span id="span2">{{clima.main.feels_like}}</span></div>
+    <div> <span id="span1">Presión:</span><span id="span2">{{clima.main.pressure}}</span></div>
+    <div><span id="span1">Humedad:</span><span id="span2">{{clima.main.humidity}}</span></div>
+    <div> <span id="span1">Nivel del Mar:</span><span id="span2">{{clima.main.sea_level}}</span></div>
+    <div><span id="span1">Velocidad del Viento:</span><span id="span2">{{clima.wind.speed}}</span></div>
+    <button (click)="refreshTime() ">REFRESH </button>
+  }
+
+ 
+ 
+
+ 
+
+ 
+
+</div>
+
+
+
+
+
+
+
